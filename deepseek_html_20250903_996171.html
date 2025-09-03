@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sythware - Premium Roblox Cheats</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-container">
+                <div class="spinning-logo">
+                    <img src="https://media.discordapp.net/attachments/1412541654300360886/1412545694715215884/raw_1.png?ex=68b8af31&is=68b75db1&hm=d55db21e89433165489bcbef681110a2d8714a32c2a1f31feb4b23d2251d9fc6&=&format=webp&quality=lossless&width=768&height=768" alt="Sythware Logo">
+                </div>
+                <div class="logo-text">SYTHWARE</div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#games">Games</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#why-use">Features</a></li>
+                    <li><a href="#comparison">Comparison</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#" id="cart-icon" class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count" id="cart-count">0</span>
+                    </a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- Cart System -->
+        <div class="cart-container" id="cart-container">
+            <div class="cart-header">
+                <h3>Your Cart</h3>
+                <button class="close-cart" id="close-cart"><i class="fas fa-times"></i></button>
+            </div>
+            <div id="cart-items">
+                <!-- Cart items will be added here -->
+            </div>
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total">$0.00</span>
+            </div>
+            <button class="checkout-btn" id="checkout-btn">Proceed to Checkout</button>
+        </div>
+        
+        <!-- Payment Section -->
+        <section class="payment-section" id="payment-section">
+            <h2 class="section-title">Complete Your Purchase</h2>
+            
+            <div class="payment-form">
+                <h3 style="color: var(--secondary); margin-bottom: 20px;">Select Payment Method</h3>
+                <div class="payment-methods">
+                    <div class="payment-method" data-method="cashapp">
+                        <i class="fas fa-dollar-sign"></i>
+                        <div>CashApp</div>
+                    </div>
+                    <div class="payment-method" data-method="applepay">
+                        <i class="fab fa-apple"></i>
+                        <div>Apple Pay</div>
+                    </div>
+                    <div class="payment-method" data-method="crypto">
+                        <i class="fab fa-bitcoin"></i>
+                        <div>Crypto</div>
+                    </div>
+                    <div class="payment-method" data-method="robux">
+                        <i class="fas fa-coins"></i>
+                        <div>Robux</div>
+                    </div>
+                </div>
+                
+                <div id="payment-details">
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="Your email for product delivery">
+                    </div>
+                    
+                    <div id="cashapp-details" class="payment-method-details">
+                        <div class="form-group">
+                            <label for="cashapp-id">CashApp ID</label>
+                            <input type="text" id="cashapp-id" placeholder="Your CashApp $ID">
+                        </div>
+                    </div>
+                    
+                    <div id="crypto-details" class="payment-method-details" style="display: none;">
+                        <div class="form-group">
+                            <label for="crypto-wallet">Wallet Address</label>
+                            <input type="text" id="crypto-wallet" placeholder="Your crypto wallet address">
+                        </div>
+                        <div class="form-group">
+                            <label for="crypto-type">Cryptocurrency</label>
+                            <select id="crypto-type" class="form-control">
+                                <option value="btc">Bitcoin (BTC)</option>
+                                <option value="eth">Ethereum (ETH)</option>
+                                <option value="usdt">Tether (USDT)</option>
+                                <option value="ltc">Litecoin (LTC)</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div id="robux-details" class="payment-method-details" style="display: none;">
+                        <div class="form-group">
+                            <label for="roblox-user">Roblox Username</label>
+                            <input type="text" id="roblox-user" placeholder="Your Roblox username">
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="complete-payment-btn" id="complete-payment-btn">Complete Payment</button>
+            </div>
+        </section>
+        
+        <section class="hero">
+            <h1>Experience The Best Roblox Cheat</h1>
+            <p class="tagline">Sythware provides <span class="highlight">premium gaming cheats</span> for your favorite Roblox experiences. Get the competitive edge with our advanced features.</p>
+            
+            <div class="pricing-section" id="pricing">
+                <div class="pricing-card popular" data-product="lifetime" data-price="5">
+                    <h2 class="plan-name">Lifetime Access</h2>
+                    <div class="price">
+                        <span class="price-currency">$</span>5<span class="price-period">one-time</span>
+                    </div>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check-circle"></i> Permanent access to all features</li>
+                        <li><i class="fas fa-check-circle"></i> Priority support</li>
+                        <li><i class="fas fa-check-circle"></i> Early access to new games</li>
+                        <li><i class="fas fa-check-circle"></i> Regular updates</li>
+                        <li><i class="fas fa-check-circle"></i> No hidden fees</li>
+                    </ul>
+                    <button class="buy-btn add-to-cart">ADD TO CART</button>
+                </div>
+            </div>
+        </section>
+        
+        <section class="games-section" id="games">
+            <h2 class="section-title">Supported Games</h2>
+            <div class="games-grid">
+                <div class="game-card">
+                    <div class="status working"></div>
+                    <div class="game-name">Hoopz</div>
+                </div>
+                <div class="game-card">
+                    <div class="status updating"></div>
+                    <div class="game-name">Football Fusion 2</div>
+                </div>
+                <div class="game-card">
+                    <div class="status not-working"></div>
+                    <div class="game-name">Murder Mystery 2</div>
+                </div>
+                <div class="game-card">
+                    <div class="status not-working"></div>
+                    <div class="game-name">Ink Game</div>
+                </div>
+                <div class="game-card">
+                    <div class="status working"></div>
+                    <div class="game-name">The Rake REMASTERED</div>
+                </div>
+                <div class="game-card">
+                    <div class="status working"></div>
+                    <div class="game-name">Arcade Basketball</div>
+                </div>
+                <div class="game-card">
+                    <div class="status working"></div>
+                    <div class="game-name">The Strongest Battlegrounds</div>
+                </div>
+                <div class="game-card">
+                    <div class="status working"></div>
+                    <div class="game-name">Evade</div>
+                </div>
+                <div class="game-card">
+                    <div class="status working"></div>
+                    <div class="game-name">Da Hood</div>
+                </div>
+                <div class="game-card">
+                    <div class="status working"></div>
+                    <div class="game-name">Basketball Stars 3</div>
+                </div>
+                <div class="game-card">
+                    <div class="status working"></div>
+                    <div class="game-name">99 Nights in the Forest</div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="why-use" id="why-use">
+            <h2 class="why-use-title">Why Use Sythware?</h2>
+            <p class="why-use-subtitle">Every reason to choose Sythware, none to doubt it.</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-bolt"></i></div>
+                    <h3 class="feature-title">Lightning Fast</h3>
+                    <p class="feature-desc">Our cheats are optimized for performance with minimal impact on your system.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3 class="feature-title">Undetectable</h3>
+                    <p class="feature-desc">Advanced anti-detection systems keep your account safe and secure.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-sync-alt"></i></div>
+                    <h3 class="feature-title">Frequent Updates</h3>
+                    <p class="feature-desc">We update our cheats within hours of game patches to ensure compatibility.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-gamepad"></i></div>
+                    <h3 class="feature-title">Wide Game Support</h3>
+                    <p class="feature-desc">We support more Roblox games than any other cheat provider.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="comparison-section" id="comparison">
+            <h2 class="section-title">Sythware vs. The Competition</h2>
+            
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Sythware</th>
+                        <th>Others</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Price</td>
+                        <td><span class="checkmark">✔</span> $5 Lifetime</td>
+                        <td><span class="xmark">✖</span> Really expensive</td>
+                    </tr>
+                    <tr>
+                        <td>Support</td>
+                        <td><span class="checkmark">✔</span> 24/7 Quick Response</td>
+                        <td><span class="xmark">✖</span> Bad, slow support</td>
+                    </tr>
+                    <tr>
+                        <td>Installation</td>
+                        <td><span class="checkmark">✔</span> Simple & Easy</td>
+                        <td><span class="xmark">✖</span> Complicated install process</td>
+                    </tr>
+                    <tr>
+                        <td>Game Support</td>
+                        <td><span class="checkmark">✔</span> Supports The Games You Need</td>
+                        <td><span class="xmark">✖</span> Doesn't support most games</td>
+                    </tr>
+                    <tr>
+                        <td>Updates</td>
+                        <td><span class="checkmark">✔</span> Fast & Frequent</td>
+                        <td><span class="xmark">✖</span> Slow Updates</td>
+                    </tr>
+                    <tr>
+                        <td>Script Support</td>
+                        <td><span class="checkmark">✔</span> Supports 99.99% of Scripts</td>
+                        <td><span class="xmark">✖</span> Limited script support</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <section class="testimonials">
+            <h2 class="section-title">What Gamers Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">Sythware completely transformed my gaming experience. The advantages are incredible and the setup was super easy!</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">A</div>
+                        <div class="author-info">
+                            <div class="author-name">Anonymous</div>
+                            <div class="author-title">Pro Gamer</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">Best $5 I've ever spent on gaming. The lifetime access is an incredible deal for all the features you get.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">A</div>
+                        <div class="author-info">
+                            <div class="author-name">Anonymous</div>
+                            <div class="author-title">Competitive Player</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">The regular updates keep Sythware working perfectly even after game patches. The devs are always on top of things!</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">A</div>
+                        <div class="author-info">
+                            <div class="author-name">Anonymous</div>
+                            <div class="author-title">Streamer</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="faq-section" id="faq">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">Is Sythware detectable? <i class="fas fa-chevron-down"></i></div>
+                <div class="faq-answer">Sythware uses advanced anti-detection technology to ensure your account remains safe. We regularly update our software to stay ahead of game detection systems.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">How do I get access after purchasing? <i class="fas fa-chevron-down"></i></div>
+                <div class="faq-answer">After completing your purchase, you'll receive an email with download instructions and your unique license key. The process takes only a few minutes.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">What if a game I play isn't supported? <i class="fas fa-chevron-down"></i></div>
+                <div class="faq-answer">We're constantly adding support for new games. You can request games through our Discord server, and our team will prioritize popular requests.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Do you offer refunds? <i class="fas fa-chevron-down"></i></div>
+                <div class="faq-answer">We do not offer refunds as all sales are final. Please ensure our software meets your needs before purchasing.</div>
+            </div>
+        </section>
+        
+        <footer>
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Sythware</h3>
+                    <p>Premium gaming cheats for your favorite Roblox experiences.</p>
+                    <div class="social-links">
+                        <a href="https://discord.gg/sythware" target="_blank"><i class="fab fa-discord"></i></a>
+                        <a href="https://www.youtube.com/@Coreyraps" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Products</h3>
+                    <ul>
+                        <li><a href="#">Sythware for Windows</a></li>
+                        <li><a href="#">Sythware for Mac</a></li>
+                        <li><a href="#">Mobile Version (Beta)</a></li>
+                        <li><a href="#">Game Presets</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">System Requirements</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>© 2023 Sythware. All rights reserved. This product is not affiliated with Roblox Corporation or any game developers.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
